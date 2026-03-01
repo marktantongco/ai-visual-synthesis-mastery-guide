@@ -1,58 +1,31 @@
-# 🚀 Welcome to Z.ai Code Scaffold
+# AI Visual Synthesis Mastery Guide
 
-A modern, production-ready web application scaffold powered by cutting-edge technologies, designed to accelerate your development with [Z.ai](https://chat.z.ai)'s AI-powered coding assistance.
+A comprehensive, interactive web application for AI practitioners seeking production-grade consistency through objective parameter control. Navigate skill domains, discover relationships, and master the technical vocabulary of visual synthesis.
 
-## ✨ Technology Stack
+![Next.js](https://img.shields.io/badge/Next.js-16-black?style=flat-square&logo=next.js)
+![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?style=flat-square&logo=typescript)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind-4-38B2AC?style=flat-square&logo=tailwind-css)
+![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)
 
-This scaffold provides a robust foundation built with:
+## ✨ Features
 
-### 🎯 Core Framework
-- **⚡ Next.js 16** - The React framework for production with App Router
-- **📘 TypeScript 5** - Type-safe JavaScript for better developer experience
-- **🎨 Tailwind CSS 4** - Utility-first CSS framework for rapid UI development
+### 🎯 Three Main Views
+- **Discovery** - Interactive periodic table-style skill visualization with 8 domains and 37 skills across 6 tiers
+- **Documents** - Complete skills.md documentation with installation guide and table of contents
+- **Directory** - skills.sh-style directory with leaderboard, search, and agent carousel
 
-### 🧩 UI Components & Styling
-- **🧩 shadcn/ui** - High-quality, accessible components built on Radix UI
-- **🎯 Lucide React** - Beautiful & consistent icon library
-- **🌈 Framer Motion** - Production-ready motion library for React
-- **🎨 Next Themes** - Perfect dark mode in 2 lines of code
+### 🎨 Design System
+- **Void Black (#0A0A0A)** - Primary background
+- **Brutal Orange (#FF3B00)** - Primary actions and accents
+- **Matrix Green (#00FF94)** - Success states and code highlights
+- **0px border-radius** - Brutalist aesthetic throughout
+- **High-contrast hover states** - Invert on interaction
 
-### 📋 Forms & Validation
-- **🎣 React Hook Form** - Performant forms with easy validation
-- **✅ Zod** - TypeScript-first schema validation
-
-### 🔄 State Management & Data Fetching
-- **🐻 Zustand** - Simple, scalable state management
-- **🔄 TanStack Query** - Powerful data synchronization for React
-- **🌐 Fetch** - Promise-based HTTP request
-
-### 🗄️ Database & Backend
-- **🗄️ Prisma** - Next-generation TypeScript ORM
-- **🔐 NextAuth.js** - Complete open-source authentication solution
-
-### 🎨 Advanced UI Features
-- **📊 TanStack Table** - Headless UI for building tables and datagrids
-- **🖱️ DND Kit** - Modern drag and drop toolkit for React
-- **📊 Recharts** - Redefined chart library built with React and D3
-- **🖼️ Sharp** - High performance image processing
-
-### 🌍 Internationalization & Utilities
-- **🌍 Next Intl** - Internationalization library for Next.js
-- **📅 Date-fns** - Modern JavaScript date utility library
-- **🪝 ReactUse** - Collection of essential React hooks for modern development
-
-## 🎯 Why This Scaffold?
-
-- **🏎️ Fast Development** - Pre-configured tooling and best practices
-- **🎨 Beautiful UI** - Complete shadcn/ui component library with advanced interactions
-- **🔒 Type Safety** - Full TypeScript configuration with Zod validation
-- **📱 Responsive** - Mobile-first design principles with smooth animations
-- **🗄️ Database Ready** - Prisma ORM configured for rapid backend development
-- **🔐 Auth Included** - NextAuth.js for secure authentication flows
-- **📊 Data Visualization** - Charts, tables, and drag-and-drop functionality
-- **🌍 i18n Ready** - Multi-language support with Next Intl
-- **🚀 Production Ready** - Optimized build and deployment settings
-- **🤖 AI-Friendly** - Structured codebase perfect for AI assistance
+### 🔧 Technical Features
+- **Semantic Search** - Fuse.js-powered client-side search
+- **State Management** - Zustand for bookmarks and navigation
+- **Responsive Design** - Mobile-first approach
+- **Keyboard Shortcuts** - "/" for search focus
 
 ## 🚀 Quick Start
 
@@ -72,70 +45,110 @@ bun start
 
 Open [http://localhost:3000](http://localhost:3000) to see your application running.
 
-## 🤖 Powered by Z.ai
-
-This scaffold is optimized for use with [Z.ai](https://chat.z.ai) - your AI assistant for:
-
-- **💻 Code Generation** - Generate components, pages, and features instantly
-- **🎨 UI Development** - Create beautiful interfaces with AI assistance  
-- **🔧 Bug Fixing** - Identify and resolve issues with intelligent suggestions
-- **📝 Documentation** - Auto-generate comprehensive documentation
-- **🚀 Optimization** - Performance improvements and best practices
-
-Ready to build something amazing? Start chatting with Z.ai at [chat.z.ai](https://chat.z.ai) and experience the future of AI-powered development!
-
 ## 📁 Project Structure
 
 ```
 src/
-├── app/                 # Next.js App Router pages
-├── components/          # Reusable React components
-│   └── ui/             # shadcn/ui components
-├── hooks/              # Custom React hooks
-└── lib/                # Utility functions and configurations
+├── app/
+│   ├── page.tsx          # Main application with 3 views
+│   ├── globals.css       # Brutalist design system
+│   └── layout.tsx        # Root layout with metadata
+├── components/
+│   ├── skills/           # Skill-related components
+│   │   ├── DomainCluster.tsx
+│   │   ├── SearchBar.tsx
+│   │   ├── SkillCard.tsx
+│   │   ├── SkillPanel.tsx
+│   │   └── SkillGraph.tsx
+│   └── ui/               # shadcn/ui components
+├── data/
+│   ├── skills.ts         # Complete skills database
+│   └── domains.ts        # Domain definitions
+├── store/
+│   └── skillStore.ts     # Zustand state management
+└── lib/
+    ├── search.ts         # Search utilities
+    └── utils.ts          # Helper functions
 ```
 
-## 🎨 Available Features & Components
+## 📊 Skill Domains
 
-This scaffold includes a comprehensive set of modern web development tools:
+1. **Technical Prompt Engineering** - Constructing prompts as structured blueprints
+2. **Optical Physics & Depth Perception** - Foundation of visual engineering
+3. **Advanced Photographic Literacy** - Reconstructing real-world physics
+4. **Strategic Negation & Material Science** - Overcoming uncanny valley
+5. **Identity Preservation & Consistency** - Character and style consistency
+6. **Anamorphic Mastery & Cinematic Grammar** - Engineering narrative scale
+7. **Post-Processing & Hybrid Workflows** - Refining and integrating outputs
+8. **AI Agent Orchestration** - Managing multi-step autonomous workflows
 
-### 🧩 UI Components (shadcn/ui)
-- **Layout**: Card, Separator, Aspect Ratio, Resizable Panels
-- **Forms**: Input, Textarea, Select, Checkbox, Radio Group, Switch
-- **Feedback**: Alert, Toast (Sonner), Progress, Skeleton
-- **Navigation**: Breadcrumb, Menubar, Navigation Menu, Pagination
-- **Overlay**: Dialog, Sheet, Popover, Tooltip, Hover Card
-- **Data Display**: Badge, Avatar, Calendar
+## 🎯 Six Tiers of Visual Synthesis
 
-### 📊 Advanced Data Features
-- **Tables**: Powerful data tables with sorting, filtering, pagination (TanStack Table)
-- **Charts**: Beautiful visualizations with Recharts
-- **Forms**: Type-safe forms with React Hook Form + Zod validation
+| Tier | Focus |
+|------|-------|
+| I | Master Foundational Physics |
+| II | Reconstruct Optical Systems |
+| III | Control Material & Surface Physics |
+| IV | Map Platform-Specific Vocabulary |
+| V | Categorize Ecosystem Capabilities |
+| VI | Layer Advanced Phenomena |
 
-### 🎨 Interactive Features
-- **Animations**: Smooth micro-interactions with Framer Motion
-- **Drag & Drop**: Modern drag-and-drop functionality with DND Kit
-- **Theme Switching**: Built-in dark/light mode support
+## 🚀 Deployment
 
-### 🔐 Backend Integration
-- **Authentication**: Ready-to-use auth flows with NextAuth.js
-- **Database**: Type-safe database operations with Prisma
-- **API Client**: HTTP requests with Fetch + TanStack Query
-- **State Management**: Simple and scalable with Zustand
+### Deploy to GitHub
 
-### 🌍 Production Features
-- **Internationalization**: Multi-language support with Next Intl
-- **Image Optimization**: Automatic image processing with Sharp
-- **Type Safety**: End-to-end TypeScript with Zod validation
-- **Essential Hooks**: 100+ useful React hooks with ReactUse for common patterns
+```bash
+# Initialize git (if not already done)
+git init
 
-## 🤝 Get Started with Z.ai
+# Add all files
+git add .
 
-1. **Clone this scaffold** to jumpstart your project
-2. **Visit [chat.z.ai](https://chat.z.ai)** to access your AI coding assistant
-3. **Start building** with intelligent code generation and assistance
-4. **Deploy with confidence** using the production-ready setup
+# Commit changes
+git commit -m "Initial commit: AI Visual Synthesis Mastery Guide"
+
+# Add your GitHub repository as remote
+git remote add origin https://github.com/YOUR_USERNAME/ai-visual-synthesis-mastery-guide.git
+
+# Push to GitHub
+git push -u origin master
+```
+
+### Deploy to Vercel
+
+1. **Via Vercel Dashboard**:
+   - Go to [vercel.com](https://vercel.com)
+   - Click "Add New" → "Project"
+   - Import your GitHub repository
+   - Vercel will auto-detect Next.js settings
+   - Click "Deploy"
+
+2. **Via Vercel CLI**:
+   ```bash
+   # Install Vercel CLI
+   npm i -g vercel
+
+   # Deploy
+   vercel
+
+   # Follow the prompts to link and deploy
+   ```
+
+## 🛠️ Technology Stack
+
+- **Framework**: Next.js 16 with App Router
+- **Language**: TypeScript 5
+- **Styling**: Tailwind CSS 4
+- **UI Components**: shadcn/ui + Radix UI
+- **Icons**: Lucide React
+- **Search**: Fuse.js
+- **State**: Zustand
+- **Animations**: Framer Motion
+
+## 📝 License
+
+MIT License - feel free to use this for your own projects!
 
 ---
 
-Built with ❤️ for the developer community. Supercharged by [Z.ai](https://chat.z.ai) 🚀
+Built with ❤️ for AI practitioners. Physics-First Visual Engineering.
