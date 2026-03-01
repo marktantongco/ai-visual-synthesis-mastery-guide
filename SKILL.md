@@ -1,3 +1,8 @@
+---
+name: ai-visual-synthesis-mastery-guide
+description: A comprehensive knowledge base for AI practitioners seeking production-grade consistency through objective parameter control.
+---
+
 # AI Visual Synthesis Mastery Guide
 
 A comprehensive knowledge base for AI practitioners seeking production-grade consistency through objective parameter control.
